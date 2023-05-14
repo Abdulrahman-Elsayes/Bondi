@@ -1,0 +1,220 @@
+:root {
+  --dart-color: #051422;
+  --green-color: #33d9a9;
+  --red-color: #5c1414;
+  --yellow-color: #ffdc6b;
+  --section-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* height: 10000px; */
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  color: #a0eed8;
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* Start Navbar */
+.navbar {
+  background-color: var(--dart-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: #ffff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: #ffff;
+  font-size: 25px;
+  border-color: #fff;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+/* End Navbar */
+
+/* Start Landing */
+.landing {
+  background-color: var(--dart-color);
+  min-height: calc(100vh - 72px);
+}
+/* End Landing */
+
+/* Start Features */
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+.features .feat h4 {
+  color: var(--yellow-color);
+}
+/* End Features */
+
+/* Start OurWork */
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: #214469c9;
+
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  transition: 0.6s;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover:before {
+  transform: translateX(0);
+}
+/* End OurWork */
+
+/* Start Stuff */
+.stuff .discription {
+  max-width: 500px;
+}
+/* End Stuff */
+
+/* Start our-team */
+.our-team {
+  background-color: var(--section-color);
+}
+.our-team h2 {
+  color: var(--yellow-color);
+}
+.our-team .box h4 {
+  background-color: var(--green-color);
+}
+/* End our-team */
+
+/* Start Project */
+.project {
+  background-color: var(--dart-color);
+}
+/* End Project */
+
+/* start Subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe input[type="text"]:focus {
+  outline: none;
+}
+.subscribe ::placeholder {
+  color: #fff;
+}
+.subscribe input[type="submit"] {
+  background-color: var(--dart-color);
+  color: var(--yellow-color);
+}
+/* End Subscribe */
+
+/* Start Footer */
+.footer {
+  background-color: var(--dart-color);
+}
+.footer .copyright > span {
+  color: var(--green-color);
+}
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer div ul li:hover {
+  cursor: pointer;
+  color: var(--green-color);
+}
+
+.footer .fa-facebook {
+  transition: all 0.5s;
+}
+.footer .fa-facebook:hover {
+  background-color: #1877f2;
+  transform: scale(1.1);
+}
+.footer .fa-instagram {
+  transition: all 0.5s;
+}
+.footer .fa-instagram:hover {
+  background-color: #c13584;
+  transform: scale(1.1);
+}
+.footer .fa-twitter {
+  transition: all 0.5s;
+}
+.footer .fa-twitter:hover {
+  background-color: #1da1f2;
+  transform: scale(1.1);
+}
+.footer .fa-linkedin {
+  transition: all 0.5s;
+}
+.footer .fa-linkedin:hover {
+  background-color: #0a66c2;
+  transform: scale(1.1);
+}
+/* End Footer */
